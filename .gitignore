@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/DockerWright/node_modules
+/DockerWright/test-results
+/DockerWrightManager/.vs
+/DockerWrightManager/Application/bin/Debug/netcoreapp3.1
+/DockerWrightManager/Application/obj

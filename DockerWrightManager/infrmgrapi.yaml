@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: infmgmt
+spec:
+  selector:
+    matchLabels:
+      app: infmgmt
+  template:
+    metadata:
+      labels:
+        app: infmgmt
+    spec:
+      containers:
+        - name: infmgmt
+          image: brivvirs.azurecr.io/infrmgmt
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+          ports:
+          - containerPort: 80
+            name: http
+          env:
+            - name: InfrastructureSecret
+              value: 'TY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ'
+            - name: DockerAPI
+              value: 'npipe://./pipe/docker_engine'
+            - name: KubernetesHost
+              value: 'https://kubernetes.default.svc'
+            - name: KubernetesDefaultNamespace
+              value: 'default'
+            - name: ImagePullSecret
+              value: 'acr-secret'
+            - name: MountPath
+              value: '/data'
+            - name: Volume
+              value: 'my-docker-storage-pv'
+            - name: VolumeClaim
+              value: 'my-docker-storage-pv-claim'  
+            - name: InfrstructureEnvironment
+              value: '3' 

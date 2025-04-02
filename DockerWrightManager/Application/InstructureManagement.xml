@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InstructureManagement</name>
+    </assembly>
+    <members>
+        <member name="T:InstructureManagement.Persistence.DockerCommandExecution">
+            <summary>
+            Using https://github.com/dotnet/Docker.DotNet library
+            </summary>
+        </member>
+        <member name="M:InstructureManagement.Persistence.KubernetesContainerProcessing.GetDeamonImages">
+            <summary>
+            Red Hat api
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:InstructureManagement.Services.IDockerCommandExecution">
+            <summary>
+            Simple docker command executor. Send commands to docker rest api.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,26 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": { "name": "" },
+  "spec": {
+    "ttlSecondsAfterFinished": 500,
+    "template": {
+      "spec": {
+        "containers": [
+          {
+            "env": [],
+            "image": "DockerWright",
+            "imagePullPolicy": "Always",
+            "name": "",
+            "volumeMounts": [],
+            "resources": {},
+            "command": []
+          }
+        ],
+        "volumes": [],
+        "restartPolicy": "Never"
+      }
+    },
+    "backoffLimit": 0
+  }
+}
