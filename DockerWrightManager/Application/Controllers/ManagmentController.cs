@@ -32,7 +32,7 @@ namespace DockerWrightManager.Controllers
             parameters.Image = _appSetting.Image;
             parameters.Volume = "ResultVolume";
             var jobId = Guid.NewGuid().ToString();
-            parameters.Service = "dockerwright"+Guid.NewGuid().ToString();
+            parameters.Service = "testresult-"+Guid.NewGuid().ToString();
             parameters.Env = new List<Env>()
             {
                 new Env { Name = "PLAYWRIGHT_HTML_OUTPUT_DIR", Value = _appSetting.ResultVolume.MountPath + $"/{jobId}" },
@@ -52,7 +52,7 @@ namespace DockerWrightManager.Controllers
             ContainerParameters parameters = new ContainerParameters();
             parameters.Image = _appSetting.Image;
             parameters.Volume = "ResultVolume";
-            var jobId = "dockerwright" + Guid.NewGuid().ToString();
+            var jobId = "testresult-" + Guid.NewGuid().ToString();
             parameters.Service = jobId;
             parameters.Env = new List<Env>()
             {
@@ -98,7 +98,7 @@ namespace DockerWrightManager.Controllers
         [HttpGet("list")]
         public async Task<IActionResult> List()
         {
-            var list = new List<string> { "tests/test.spec.ts", "tests/othertest.spec.ts" };
+            var list = new List<string> { "tests/productCatalogue.spec.ts", "tests/programmingRequest.spec.ts" };
             var res = "<html>";
             res += "<script>"
                 + "function startJob(path, id, id2) {\r\n  var xhttp = new XMLHttpRequest();\r\n  xhttp.onreadystatechange = function() {\r\n    if (this.readyState == 4 && this.status == 200) {\r\n\t\tdocument.getElementById(id).style.visibility = \"visible\";\r\n\t\tdocument.getElementById(id2).style.visibility = \"hidden\";\r\n\t\tvar jobid = this.responseText;\r\n\t \r\n\t\tsetInterval(function(){\r\n\t\t\tvar that = this;\r\n\t\t\tvar x = new XMLHttpRequest();\r\n\t\t\tx.onreadystatechange = function() {\r\n\t\t\t\tif (this.readyState == 4 && this.status == 200) {\r\n\t\t\t\t\tdocument.getElementById(id).style.visibility = \"hidden\";\r\n\t\t\t\t\tdocument.getElementById(id2).style.visibility = \"visible\";\r\n\t\t\t\t\tdocument.getElementById(id2).innerHTML=\"<a href=/api/result?path=/data/\"+jobid+\">RESULT</a>\";\r\n\t\t\t\t\tclearInterval(that);\r\n\t\t\t\t}\r\n\t\t\t};\r\n\t\t\tx.open(\"GET\", \"/api/complete?path=/data/\"+jobid, true);\r\n\t\t\tx.send();\r\n\t\t},5000);\r\n    }\r\n  };\r\n  xhttp.open(\"GET\", \"/api/startone?test=\"+path, true);\r\n  xhttp.send();  \r\n}\r\n\r\n"
