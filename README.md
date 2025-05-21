@@ -1,3 +1,4 @@
+# DOMINO-E User Simulator
 # DockerWright
 DockerWright is a set of tests for Playwright. All tests are under DockerWright/tests
 See Playwright docs for how to write them. 
