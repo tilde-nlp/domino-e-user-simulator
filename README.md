@@ -53,15 +53,13 @@ A simple web interface for listing and launching available tests is accessible a
 ## Test Execution via API (Using curl)
 You can also start a test programmatically using a curl command:
 
-```bash
+``` bash
 curl "https://domino-e-demo.tilde.lv/api/startone?test=tests/programmingRequest.spec.ts"
 ```
-This will initiate the execution of the programmingRequest.spec.ts test script.
+This will initiate the execution of the `tests\programmingRequest.spec.ts` test script.
 The response will return a test ID, for example:
-```json
-{
-  "testId": "1716301980-programmingRequest"
-}
+```
+testresult-8f15b5db-debb-4d06-932a-3102b91b30f2
 ```
 
 # Relevant configuration keys
