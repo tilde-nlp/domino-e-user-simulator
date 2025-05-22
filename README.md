@@ -1,7 +1,7 @@
 # DOMINO-E User Simulator
-This repository contains a User Simulator developed for the *DOMINO-E* (https://domino-e.eu/) project.
+This repository contains a User Simulator developed for the ** DOMINO-E ** (https://domino-e.eu/) project.
 
-In a typical setting, end users interact with DOMINO-E through a graphical user interface (UI) provided by the User Access Service (UAS), which hosts or integrates the Virtual Assistant Service (VAS). This interface is used by domain experts to test the system and provide feedback on various usage scenarios.
+In a typical setting, end users interact with DOMINO-E through a graphical user interface (UI) provided by the ** User Access Service (UAS) **, which hosts or integrates the ** Virtual Assistant Service (VAS) **. This interface is used by domain experts to test the system and provide feedback on various usage scenarios.
 
 However, for end-to-end evaluations involving all three main components of DOMINO-E: VAS, Coverage Service (CS), and Satellite 
 Communication and Resource Management System (SCRMS) real-time testing is not practical. These scenarios can span several days or even weeks, making manual interaction infeasible.
