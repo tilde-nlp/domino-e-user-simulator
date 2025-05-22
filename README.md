@@ -49,19 +49,19 @@ The repository is organized as follows:
 
 ### startjob 
 
-Parms:
-callback - string, optional
+Params:
+- `callback` - string, optional
 
 Runs the DockerWright image with "npm run test-html-report"
 This runs every test in DockerWright/tests
 
-If callback is specified, makes a HTTP GET request to callback when done
+If callback is specified, makes a HTTP GET request to callback when done.
 
 ### startone
 
 Params:
-`test` - string
-callback - string, optional
+- `test` - string
+- `callback` - string, optional
 
 Runs the DockerWright image with "npx playwright test {test} --browser=all --reporter=html"
 This runs the specified test file (e.g. 'tests/test.spec.ts')
@@ -75,14 +75,14 @@ Returns HTML with links to every test result currently stored in ResultVolume
 ### result
 
 Parms:
-path - string
+- `path` - string
 
 Serves one test result as HTML. Links to this are listed by resultlist
 
 ### complete
 
-Parms:
-path - string
+Params:
+- `path` - string
 
 Checks that a result exists in path. Returns 200 if it does, 400 if it doesn't. Polled by /list to check if a test is done
 
@@ -95,6 +95,6 @@ This list is hardcoded and to work properly needs to be updated in code whenever
 ### status
 
 Parms:
-job - string
+- `job` - string
 
 Returns the job info directly from Kubernetes. Job id is returned by /startone when starting a job.
