@@ -35,6 +35,14 @@ An example deployment of the User Simulator is available on Tilde's infrastructu
 
 This deployment serves as a reference setup for integrating and validating user interaction scenarios in a simulated end-to-end DOMINO-E workflow.
 
+An example deployment of the User Simulator is available at:
+
+🔗 (https://domino-e-demo.tilde.lv/)
+
+This instance simulates user interactions with the DOMINO-E Virtual Assistant Service (VAS), which is deployed at:
+
+🔗 (https://va.tilde.com/scontent/prodk8sbotdomin0/media/staging/uas.html)
+
 # Relevant configuration keys
 See appsettings.json for defaults and format
 
