@@ -30,7 +30,13 @@ The repository is organized as follows:
 - **DockerWrightManager** 
  is a .NET web app that runs DockerWright images as jobs in Kubernetes and serves the test results.
 
-## Relevant configuration keys - see appsettings.json for defaults and format
+# Example Deployment
+An example deployment of the User Simulator is available on Tilde's infrastructure, running in the local testing environment for the DOMINO-E Virtual Assistant Service (VAS).
+
+This deployment serves as a reference setup for integrating and validating user interaction scenarios in a simulated end-to-end DOMINO-E workflow.
+
+# Relevant configuration keys
+See appsettings.json for defaults and format
 
 - KubernetesHost: Kubernetes API url.
 - ImagePullSecret: Passed in the job spec.
