@@ -61,7 +61,7 @@ The response will return a test ID, for example:
 ```
 testresult-8f15b5db-debb-4d06-932a-3102b91b30f2
 ```
-Then you can check the status of the test execution using a curl command:
+Then you can check the status of the test execution using a `curl` command:
 ``` 
 curl "https://domino-e-demo.tilde.lv/api/complete?path=testresult-8f15b5db-debb-4d06-932a-3102b91b30f2"
 ```
@@ -69,6 +69,11 @@ This call returns:
 
 - HTTP 200 if the test has completed successfully, or
 - HTTP 400 if the test is still running.
+
+Once execution has been completed, you can retrieve the test results using a `curl` command:
+```
+curl "https://domino-e-demo.tilde.lv/api/result?path=testresult-8f15b5db-debb-4d06-932a-3102b91b30f2"
+```
 
 # Relevant configuration keys
 See appsettings.json for defaults and format
