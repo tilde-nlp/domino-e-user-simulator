@@ -23,15 +23,15 @@ This enables robust, repeatable, and measurable testing of complex DOMINO-E work
 
 The User Simulator is built on top of [Playwright](https://github.com/microsoft/playwright), a powerful framework for web testing and automation. Playwright enables cross-browser testing (Chromium, Firefox, and WebKit) through a single API. This project wraps Playwright in a containerized environment that includes the Playwright framework, test scripts, and APIs, allowing external systems — such as the DOMINO-E Dispatcher — to manage and trigger test execution.
 
-# DockerWright
-DockerWright is a set of tests for Playwright. All tests are under DockerWright/tests
+# Content of the Repository
+The repository is organized as follows:
+- *DockerWright* is a set of tests for Playwright. All tests are under DockerWright/tests. 
 See Playwright docs for how to write them. 
 
 After any changes in the tests, rebuild DockerWright and make sure the image is available to DockerWrightManager
 
-# DockerWrightManager
-
-DockerWrightManager is a .NET web app that runs DockerWright images as jobs in Kubernetes and serves the test results.
+- *DockerWrightManager* 
+ is a .NET web app that runs DockerWright images as jobs in Kubernetes and serves the test results.
 
 ## Relevant configuration keys - see appsettings.json for defaults and format
 
