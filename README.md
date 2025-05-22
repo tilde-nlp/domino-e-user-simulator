@@ -37,7 +37,7 @@ This deployment serves as a reference setup for integrating and validating user 
 
 An example deployment of the User Simulator is available at:
 
-🔗 (https://domino-e-demo.tilde.lv/)
+🔗 https://domino-e-demo.tilde.lv/
 
 This instance simulates user interactions with the DOMINO-E Virtual Assistant Service (VAS), which is deployed at:
 
