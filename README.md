@@ -43,6 +43,13 @@ This instance simulates user interactions with the DOMINO-E Virtual Assistant Se
 
 🔗 (https://va.tilde.com/scontent/prodk8sbotdomin0/media/staging/uas.html)
 
+## Test Execution Interface
+A simple web interface for listing and launching available tests is accessible at:
+🔗 https://domino-e-demo.tilde.lv/api/list
+- The UI lists the currently available test scenarios (by ID).
+- Clicking on a test automatically starts its execution.
+- Status updates are displayed in real time as the test runs.
+
 # Relevant configuration keys
 See appsettings.json for defaults and format
 
