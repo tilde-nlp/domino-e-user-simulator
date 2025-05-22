@@ -25,12 +25,9 @@ The User Simulator is built on top of [Playwright](https://github.com/microsoft/
 
 # Content of the Repository
 The repository is organized as follows:
-- *DockerWright* is a set of tests for Playwright. All tests are under DockerWright/tests. 
-See Playwright docs for how to write them. 
+- **DockerWright** is a set of tests for Playwright. All tests are under DockerWright/tests. See Playwright docs for how to write them. After any changes in the tests, rebuild DockerWright and make sure the image is available to DockerWrightManager
 
-After any changes in the tests, rebuild DockerWright and make sure the image is available to DockerWrightManager
-
-- *DockerWrightManager* 
+- **DockerWrightManager** 
  is a .NET web app that runs DockerWright images as jobs in Kubernetes and serves the test results.
 
 ## Relevant configuration keys - see appsettings.json for defaults and format
