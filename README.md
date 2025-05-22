@@ -1,17 +1,17 @@
 # DOMINO-E User Simulator
-This repository contains a User Simulator developed for the ** DOMINO-E ** (https://domino-e.eu/) project.
+This repository contains a User Simulator developed for the **DOMINO-E** (https://domino-e.eu/) project.
 
-In a typical setting, end users interact with DOMINO-E through a graphical user interface (UI) provided by the ** User Access Service (UAS) **, which hosts or integrates the ** Virtual Assistant Service (VAS) **. This interface is used by domain experts to test the system and provide feedback on various usage scenarios.
+In a typical setting, end users interact with DOMINO-E through a graphical user interface (UI) provided by the **User Access Service (UAS)**, which hosts or integrates the **Virtual Assistant Service (VAS)**. This interface is used by domain experts to test the system and provide feedback on various usage scenarios.
 
-However, for end-to-end evaluations involving all three main components of DOMINO-E: VAS, Coverage Service (CS), and Satellite 
-Communication and Resource Management System (SCRMS) real-time testing is not practical. These scenarios can span several days or even weeks, making manual interaction infeasible.
+However, for end-to-end evaluations involving all three main components of DOMINO-E: **VAS**, **Coverage Service (CS)**, and **Satellite 
+Communication and Resource Management System (SCRMS)** real-time testing is not practical. These scenarios can span several days or even weeks, making manual interaction infeasible.
 
-To address this, we use a time-simulated mode with an automated user simulator. This simulator mimics real user interactions by:
+To address this, we use a **time-simulated mode** with an automated user simulator. This simulator mimics real user interactions by:
 
 - Receiving commands from the Dispatcher to start a simulation at a specific point in simulated time.
 - Interacting with the UI as a human would — filling out forms, clicking buttons, waiting for responses, and executing predefined scenarios.
 
-In essence, the User Simulator is an automated UI testing script that executes a specific user scenario and verifies whether the system behaves as expected. At the end of the simulation, it can optionally invoke a callback function to notify the Dispatcher that the simulated activity has been completed.
+In essence, the **User Simulator** is an **automated UI testing script** that executes a specific user scenario and verifies whether the system behaves as expected. At the end of the simulation, it can optionally invoke a callback function to notify the Dispatcher that the simulated activity has been completed.
 
 Each test run also generates a detailed report that includes:
 
