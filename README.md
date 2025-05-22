@@ -59,8 +59,8 @@ If callback is specified, makes a HTTP GET request to callback when done
 
 ### startone
 
-Parms:
-test - string
+Params:
+`test` - string
 callback - string, optional
 
 Runs the DockerWright image with "npx playwright test {test} --browser=all --reporter=html"
