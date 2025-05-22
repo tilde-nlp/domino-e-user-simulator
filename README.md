@@ -21,6 +21,8 @@ Each test run also generates a detailed report that includes:
 
 This enables robust, repeatable, and measurable testing of complex DOMINO-E workflows.
 
+The User Simulator is built on top of [Playwright](https://github.com/microsoft/playwright), a powerful framework for web testing and automation. Playwright enables cross-browser testing (Chromium, Firefox, and WebKit) through a single API. This project wraps Playwright in a containerized environment that includes the Playwright framework, test scripts, and APIs, allowing external systems — such as the DOMINO-E Dispatcher — to manage and trigger test execution.
+
 # DockerWright
 DockerWright is a set of tests for Playwright. All tests are under DockerWright/tests
 See Playwright docs for how to write them. 
