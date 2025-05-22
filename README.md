@@ -50,6 +50,20 @@ A simple web interface for listing and launching available tests is accessible a
 - Clicking on a test automatically starts its execution.
 - Status updates are displayed in real time as the test runs.
 
+## Test Execution via API (Using curl)
+You can also start a test programmatically using a curl command:
+
+```bash
+curl "https://domino-e-demo.tilde.lv/api/startone?test=tests/programmingRequest.spec.ts"
+```
+This will initiate the execution of the programmingRequest.spec.ts test script.
+The response will return a test ID, for example:
+```json
+{
+  "testId": "1716301980-programmingRequest"
+}
+```
+
 # Relevant configuration keys
 See appsettings.json for defaults and format
 
