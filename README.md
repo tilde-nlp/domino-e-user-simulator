@@ -32,18 +32,18 @@ The repository is organized as follows:
 
 ## Relevant configuration keys - see appsettings.json for defaults and format
 
-KubernetesHost: Kubernetes API url.
-ImagePullSecret: Passed in the job spec.
-Image: DockerWright image name. Passed in the job spec.
-JobDefaultNamespace: Passed in the job spec.  
-JobDefaultRequestMemory: Passed in the job spec.
-JobDefaultRequestCPU: Passed in the job spec.
+- KubernetesHost: Kubernetes API url.
+- ImagePullSecret: Passed in the job spec.
+- Image: DockerWright image name. Passed in the job spec.
+- JobDefaultNamespace: Passed in the job spec.  
+- JobDefaultRequestMemory: Passed in the job spec.
+- JobDefaultRequestCPU: Passed in the job spec.
 
-ResultVolume: Passed to the job and also used by the Manager. This is where the test results are stored and served from.    
-URL: URL of this service. Used when generating links.
-PageURL: URL of the UI being tested, passed to the actual tests as PLAYWRIGHT_PAGE_URL env variable
+- ResultVolume: Passed to the job and also used by the Manager. This is where the test results are stored and served from.    
+- URL: URL of this service. Used when generating links.
+- PageURL: URL of the UI being tested, passed to the actual tests as PLAYWRIGHT_PAGE_URL env variable
   
-LogService: For error logging
+- LogService: For error logging
 
 ## /api endpoints
 
