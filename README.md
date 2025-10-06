@@ -147,7 +147,7 @@ Parms:
 Returns the job info directly from Kubernetes. Job id is returned by /startone when starting a job.
 
 # License
-
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 Copyright 2025 Tilde SIA
 
 Licensed under the Apache License, Version 2.0 (the "License");
