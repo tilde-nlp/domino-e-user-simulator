@@ -145,3 +145,7 @@ Parms:
 - `job` - string
 
 Returns the job info directly from Kubernetes. Job id is returned by /startone when starting a job.
+
+# Third-Party Software
+This project relies on third-party software components.
+A complete list of dependencies, including versions, licenses, and sources, is provided in [SRF.md](SRF.md).
